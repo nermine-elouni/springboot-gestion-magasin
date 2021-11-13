@@ -28,6 +28,4 @@ public class Fournisseur implements Serializable {
 	private String libelle;
 
 	// Many to many association Fournisseur *-* Produit
-	@ManyToMany(cascade = CascadeType.ALL)
-	private Set<Produit> produits;
 }

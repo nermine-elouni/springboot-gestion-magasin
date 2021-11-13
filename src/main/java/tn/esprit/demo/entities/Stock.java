@@ -26,5 +26,5 @@ public class Stock implements Serializable{
 	
 	//One to many association Stock 1-* Produit
 	@OneToMany(cascade = CascadeType.ALL, mappedBy="stock")
-	private Set<Produit> P;
+	private Set<Produit> produit;
 }

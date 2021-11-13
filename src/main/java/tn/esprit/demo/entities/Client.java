@@ -47,5 +47,5 @@ public class Client implements Serializable{
 	
 	// One to many association Client 1-* Facture
 	@OneToMany(cascade = CascadeType.ALL, mappedBy="client")
-	private Set<Facture> f;
+	private Set<Facture> facture;
 }

@@ -32,5 +32,5 @@ public class Facture implements Serializable {
 
 	// One to many association Facture 1-* detailFacture
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "facture")
-	private Set<detailFacture> df;
+	private Set<detailFacture> detailFactures;
 }

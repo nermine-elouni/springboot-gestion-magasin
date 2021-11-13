@@ -24,9 +24,7 @@ public class Produit implements Serializable {
 	private float prixUnitaire;
 
 	// One to one association Produit 1-1 detailProduit
-	@OneToOne(fetch = FetchType.LAZY,
-			cascade =  CascadeType.ALL,
-			mappedBy = "produit")
+	@OneToOne
 	private DetailProduit detailProduit;
 
 	// Many to One association Produit *-1 Rayon
@@ -43,7 +41,7 @@ public class Produit implements Serializable {
 
 
 	// Many to many association Produit *-* Fournisseur
-	@ManyToMany(mappedBy = "produits", cascade = CascadeType.ALL)
+	@ManyToMany(cascade = CascadeType.ALL)
 	private Set<Fournisseur> fournisseur;
 
 	public void setRayon() {

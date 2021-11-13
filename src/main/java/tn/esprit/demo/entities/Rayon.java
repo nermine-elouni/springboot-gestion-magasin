@@ -29,5 +29,5 @@ public class Rayon implements Serializable {
 	
 	// One to many association Rayon 1-* Produit
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "rayon")
-	private Set<Produit> P;
+	private Set<Produit> produit;
 }
